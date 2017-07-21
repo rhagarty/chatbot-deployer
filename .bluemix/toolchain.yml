@@ -6,6 +6,9 @@ template:
   name: "Chatbot Asset Deployment"
 toolchain:
   name: 'chatbot-deploy-{{chatbotName}}-{{timestamp}}'
+  required:
+    - conversation-service
+    - load-bot-assets
 services:
   conversation-service:
     service_id: customtool
